@@ -9,4 +9,15 @@ Written in Python 3.7.3
 errors.py implements specific child classes of Exception for use throughout this project
 '''
 
+#######################################################################
+# define exception classes
+#######################################################################
+
+class SolverError(Exception):
+    '''
+    Error class for using when something goes wrong in the operation of an ODE solver
+    function in the solvers.py module
+    '''
+    
+    pass; #### end solver error
 
