@@ -17,6 +17,12 @@ import numpy as np
 # define ODE solvers
 #######################################################################
 
+
+#######################################################################
+# simple integration rules
+# see Stickler pg 65-66
+#######################################################################
+
 def ForwardRectangular(yn, tn, f, dt):
     '''
     Forward rectangular rule or explicit Euler method for integration stepping,
@@ -33,6 +39,27 @@ def ForwardRectangular(yn, tn, f, dt):
     '''
     
     return yn + f(yn, tn)*dt; #### end ForwardRectangular
+    
+    
+def BackwardRectangular(yn, tn, f, dt):
+
+    #TODO: define backward rectangular rule
+    
+    return; #### end backward rectangular
+    
+    
+def CentralRectangular(yn, tn, f, dt):
+
+    #TODO: define central rectangular rule
+
+    return; #### end central rectangular
+    
+    
+def Trapezoidal(yn, tn, f, dt):
+
+    #TODO: define trapezoidal rule
+
+    return; #### end trapezoidal
 
 
 #######################################################################
